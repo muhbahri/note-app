@@ -1,15 +1,13 @@
 import React from "react";
-import { getInitialData } from "../utils";
+import Content from "./Content";
 import List from "./List";
 
-function Body() {
-  const notes = getInitialData();
-  return (
-    <div className="note-app">
-      <h1>Catatan</h1>
-      <List notes={notes} />
-    </div>
-  );
-}
+const Body = ({ notesAll, notesArchive, setNotes }) => (
+  <div className="note-app__body">
+    <Content setNotes={setNotes} />
+    <List label="Semua Catatan" setNotes={setNotes} notes={notesAll} />
+    <List label="Arsip Catatan" setNotes={setNotes} notes={notesArchive} />
+  </div>
+);
 
 export default Body;

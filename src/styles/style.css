@@ -5,24 +5,18 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #202124;
   color: white;
 }
 
-input, textarea {
-  padding: 12px;
-  margin: 12px 0;
-  font-family: 'Inter', sans-serif;
-  background-color: transparent;
-  color: white;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+.create-btn {
+  transition: 0.3s;
 }
 
-input::placeholder, textarea::placeholder {
-  color: #aaa;
-  font-weight: bold;
+.create-btn:hover {
+  background-color: #5d7a96;
+  border-color: #5d7a96;
 }
 
 .note-app__header {
@@ -38,7 +32,6 @@ input::placeholder, textarea::placeholder {
   flex: 1;
   color: white;
 }
-
 
 .note-app__body {
   max-width: 1000px;
@@ -57,7 +50,8 @@ input::placeholder, textarea::placeholder {
   margin-bottom: 48px;
 }
 
-.note-input input, .note-input textarea {
+.note-input input,
+.note-input textarea {
   display: block;
   width: 100%;
 }
@@ -81,7 +75,7 @@ input::placeholder, textarea::placeholder {
   width: 100%;
   padding: 8px;
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -136,33 +130,59 @@ input::placeholder, textarea::placeholder {
   display: flex;
 }
 
-.note-item__delete-button,.note-item__archive-button {
-  display: block;
-  width: 100%;
+.note-item__delete-button,
+.note-item__archive-button {
   background-color: transparent;
-  border: 0;
-  border-top: 1px solid #aaa;
-  padding: 8px 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
+  font-size: 24px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border: 1px #aaa solid;
+  width: 100%;
 }
 
 .note-item__delete-button {
-  border-right: 1px solid #aaa;
-  color: #ff5f52;
+  color: #242424;
 }
 
 .note-item__archive-button {
-  color: #fff263;
+  color: #ffbf00;
 }
 
 .note-item__archive-button:hover {
-  color: #c49000;
+  background-color: #aaa;
+  color: #7c6a00;
 }
 
 .note-item__delete-button:hover {
+  background-color: #aaa;
   color: #b00020;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: #bcad80;
 }
 
 @media only screen and (min-width: 500px) {
