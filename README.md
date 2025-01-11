@@ -2,6 +2,7 @@
 
 ## Tentang Proyek
 
+![screencapture-localhost-5173-2025-01-11-21_33_10](https://github.com/user-attachments/assets/0c89a951-6d8a-4bd0-a2d0-2c0abe839e4d)
 Proyek ini dibuat sebagai langkah awal dalam mempelajari **React.js**, salah satu library JavaScript paling populer untuk membangun antarmuka pengguna (UI). Aplikasi ini merupakan bagian dari tugas submission dalam materi **Belajar Membuat Aplikasi Web dengan React** di [Dicoding](https://www.dicoding.com/). Proyek ini bertujuan untuk mempraktikkan pemahaman tentang konsep dan implementasi React dalam membangun aplikasi berbasis komponen
 
 ## Apa yang Dipelajari?
